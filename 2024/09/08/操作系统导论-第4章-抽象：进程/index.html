@@ -20,27 +20,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.  Quic">
+    <meta name="description" content="时分共享（time sharing）：[[操作系统导论 第2章 操作系统介绍#2.1 虚拟化CPU|将单个CPU（或其中一小部分）转化为看似无限数量的CPU，从而让许多程序看似同时运行。]]  4.1 抽象：进程概念 操作系统为正在运行的程序提供的抽象，就是作为的进程（progress）。 进程的机器状态（machine state）：  它能访问的内存（称为[[操作系统导论 第2章 操作系统介绍">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2024/09/08/hello-world/index.html">
+<meta property="og:title" content="操作系统导论-第4章-抽象：进程">
+<meta property="og:url" content="http://example.com/2024/09/08/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA-%E7%AC%AC4%E7%AB%A0-%E6%8A%BD%E8%B1%A1%EF%BC%9A%E8%BF%9B%E7%A8%8B/index.html">
 <meta property="og:site_name" content="来学导数吧">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.  Quic">
+<meta property="og:description" content="时分共享（time sharing）：[[操作系统导论 第2章 操作系统介绍#2.1 虚拟化CPU|将单个CPU（或其中一小部分）转化为看似无限数量的CPU，从而让许多程序看似同时运行。]]  4.1 抽象：进程概念 操作系统为正在运行的程序提供的抽象，就是作为的进程（progress）。 进程的机器状态（machine state）：  它能访问的内存（称为[[操作系统导论 第2章 操作系统介绍">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-09-08T12:55:05.002Z">
-<meta property="article:modified_time" content="2024-09-08T12:55:05.003Z">
+<meta property="article:published_time" content="2024-09-08T14:14:02.000Z">
+<meta property="article:modified_time" content="2024-09-08T14:24:35.025Z">
 <meta property="article:author" content="HalfAnElephant">
+<meta property="article:tag" content="操作系统导论">
+<meta property="article:tag" content="虚拟化">
+<meta property="article:tag" content="进程">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2024/09/08/hello-world/">
+<link rel="canonical" href="http://example.com/2024/09/08/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA-%E7%AC%AC4%E7%AB%A0-%E6%8A%BD%E8%B1%A1%EF%BC%9A%E8%BF%9B%E7%A8%8B/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/09/08/hello-world/","path":"2024/09/08/hello-world/","title":"Hello World"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/09/08/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA-%E7%AC%AC4%E7%AB%A0-%E6%8A%BD%E8%B1%A1%EF%BC%9A%E8%BF%9B%E7%A8%8B/","path":"2024/09/08/操作系统导论-第4章-抽象：进程/","title":"操作系统导论-第4章-抽象：进程"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello World | 来学导数吧</title>
+<title>操作系统导论-第4章-抽象：进程 | 来学导数吧</title>
   
 
 
@@ -140,7 +143,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#quick-start"><span class="nav-number">1.</span> <span class="nav-text"> Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text"> Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#run-server"><span class="nav-number">1.2.</span> <span class="nav-text"> Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text"> Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text"> Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#41-%E6%8A%BD%E8%B1%A1%E8%BF%9B%E7%A8%8B%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text"> 4.1 抽象：进程概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#42-%E8%BF%9B%E7%A8%8Bapi"><span class="nav-number">2.</span> <span class="nav-text"> 4.2 进程API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#43-%E8%BF%9B%E7%A8%8B%E5%88%9B%E5%BB%BA%E6%9B%B4%E5%A4%9A%E7%BB%86%E8%8A%82"><span class="nav-number">3.</span> <span class="nav-text"> 4.3 进程创建：更多细节</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#44-%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81"><span class="nav-number">4.</span> <span class="nav-text"> 4.4 进程状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#45-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-number">5.</span> <span class="nav-text"> 4.5 数据结构</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -199,7 +202,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/08/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/08/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA-%E7%AC%AC4%E7%AB%A0-%E6%8A%BD%E8%B1%A1%EF%BC%9A%E8%BF%9B%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -212,12 +215,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hello World | 来学导数吧">
+      <meta itemprop="name" content="操作系统导论-第4章-抽象：进程 | 来学导数吧">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          操作系统导论-第4章-抽象：进程
         </h1>
 
         <div class="post-meta-container">
@@ -227,8 +230,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2024-09-08 20:55:05" itemprop="dateCreated datePublished" datetime="2024-09-08T20:55:05+08:00">2024-09-08</time>
+      <time title="创建时间：2024-09-08 22:14:02 / 修改时间：22:24:35" itemprop="dateCreated datePublished" datetime="2024-09-08T22:14:02+08:00">2024-09-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">计算机</span></a>
+        </span>
     </span>
 
   
@@ -240,20 +253,47 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <div class="post-body" itemprop="articleBody"><p><strong>时分共享（<em>time sharing</em>）</strong>：[[操作系统导论 第2章 操作系统介绍#2.1 虚拟化CPU|将单个CPU（或其中一小部分）转化为看似无限数量的CPU，从而让许多程序看似同时运行。]]</p>
+<h2 id="41-抽象进程概念"><a class="markdownIt-Anchor" href="#41-抽象进程概念"></a> 4.1 抽象：进程概念</h2>
+<p>操作系统为正在运行的程序提供的抽象，就是作为的<strong>进程（<em>progress</em>）</strong>。<br />
+进程的<strong>机器状态（<em>machine state</em>）</strong>：</p>
+<ul>
+<li>它能访问的内存（称为[[操作系统导论 第2章 操作系统介绍#^6644e1|地址空间]]，<em>address space</em>）；</li>
+<li>寄存器，包括一些非常特殊的寄存器，如
+<ul>
+<li>程序计数器（<em>Program Counter, PC</em>)（或指令指针，<em>Instruction Pointer， IP</em>），告诉程序执行哪个指令；</li>
+<li>栈指针（<em>stack pointer</em>），相关的帧指针（<em>frame pointer</em>），用于管理函数参数栈、局部变量和返回地址；</li>
+</ul>
+</li>
+</ul>
+<h2 id="42-进程api"><a class="markdownIt-Anchor" href="#42-进程api"></a> 4.2 进程API</h2>
+<ul>
+<li><strong>创建（<em>create</em>）</strong>：创建新进程，运行指定程序；</li>
+<li><strong>销毁（<em>destroy</em>）</strong>：强制销毁进程，防止程序不退出；</li>
+<li><strong>等待（<em>wait</em>）</strong>：等待进程停止运行；</li>
+<li><strong>其他控制（<em>miscellaneous control</em>）</strong>：如暂停进程，然后恢复；</li>
+<li><strong>[[操作系统导论 第4章 抽象：进程#4.4 进程状态|状态]]（<em>status</em>）</strong>：获得进程的状态信息；</li>
+</ul>
+<h2 id="43-进程创建更多细节"><a class="markdownIt-Anchor" href="#43-进程创建更多细节"></a> 4.3 进程创建：更多细节</h2>
+<ul>
+<li>操作系统运行程序的第一件事：将<strong>代码</strong>和<strong>所有静态数据</strong>（如初始化变量）加载（<em>load</em>）到<strong>内存</strong>中，加载到<strong>进程的[[操作系统导论 第2章 操作系统介绍#^6644e1|地址空间]]中</strong>。<br />
+早期（或简单的）操作系统中，加载过程<strong>尽早</strong>（<em>eagerly</em>）完成，即在运行程序之前全部完成。现代操作系统<strong>惰性</strong>（<em>lazily</em>）执行该过程，即仅在程序执行期间需要加载的代码或数据片段，才会被加载。</li>
+<li>操作系统为程序的<strong>运行时栈</strong>（<em>runtime stack，stack</em>）分配内存；</li>
+<li>操作系统为程序的<strong>堆</strong>（<em>heap</em>）分配内存；</li>
+<li>操作系统执行一些其他的初始化任务，特别时与输入/输出（I/O）相关的任务。</li>
+<li>最后一项任务：起动程序，在入口处运行，即<code>main()</code>。通过跳转到<code>main()</code>例程（[[操作系统导论 第5章 插叙：进程API]]），OS将CPU的控制权转移到新创建的进程中，从而程序开始执行。</li>
+</ul>
+<h2 id="44-进程状态"><a class="markdownIt-Anchor" href="#44-进程状态"></a> 4.4 进程状态</h2>
+<p>进程可以处在一下三钟状态之一：</p>
+<ul>
+<li><strong>运行</strong>（<em>running</em>）：进程正在处理器上运行，正在执行指令。</li>
+<li><strong>就绪</strong>（<em>ready</em>）：程序已准备好运行，但由于某种原因，操作系统选择不在此时运行。</li>
+<li><strong>阻塞</strong>（<em>blocked</em>）：一个进程执行了某种操作，直到发生其他事件时才会准备运行。<br />
+![[图4.2 进程：状态转换.png]]</li>
+</ul>
+<h2 id="45-数据结构"><a class="markdownIt-Anchor" href="#45-数据结构"></a> 4.5 数据结构</h2>
+<p>对于停止的进程，寄存器上下文将保存其寄存器的内容。当一个进程停止时，它的寄存器将被保存到这个<strong>内存</strong>位置。通过恢复这些寄存器（将它们的值放回实际的物理寄存器中），操作系统可以恢复运行该进程。<strong>[[操作系统导论 第6章 机制：受限直接执行#保存和恢复上下文|上下文切换（context switch）]]</strong>。<br />
+有时系统会有一个初始（<em>initial</em>）状态，表示进程在创建是处于的状态。另外，一个进程可以处于已退出但尚未清理的最终（<em>final</em>）状态（UNIX中称为僵尸状态），它允许其他进程（通常是其父进程）检查进程的<strong>返回代码</strong>，并查看刚刚完成的进程是否执行。完成后，父进程将执行最后一次调用（例如，[[操作系统导论 第5章 插叙：进程API#5.2 <code>wait()</code>系统调用|wait()]]），已等待子进程的完成，并告诉操作系统它可以清理这个正在结束的进程所有相关的数据结构。</p>
 
     </div>
 
@@ -262,18 +302,23 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA/" rel="tag"># 操作系统导论</a>
+              <a href="/tags/%E8%99%9A%E6%8B%9F%E5%8C%96/" rel="tag"># 虚拟化</a>
+              <a href="/tags/%E8%BF%9B%E7%A8%8B/" rel="tag"># 进程</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2024/09/08/%E6%96%B9%E7%A8%8B%E4%B8%8E%E4%BB%A3%E6%95%B0%E5%BC%8F/" rel="prev" title="方程与代数式">
-                  <i class="fa fa-angle-left"></i> 方程与代数式
+                <a href="/2024/09/08/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA-%E7%AC%AC2%E7%AB%A0-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D/" rel="prev" title="操作系统导论-第2章-操作系统介绍">
+                  <i class="fa fa-angle-left"></i> 操作系统导论-第2章-操作系统介绍
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/09/08/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%AE%BA-%E7%AC%AC1%E7%AB%A0-%E5%85%B3%E4%BA%8E%E6%9C%AC%E4%B9%A6%E7%9A%84%E5%AF%B9%E8%AF%9D/" rel="next" title="操作系统导论-第1章-关于本书的对话">
-                  操作系统导论-第1章-关于本书的对话 <i class="fa fa-angle-right"></i>
+                <a href="/2024/09/08/Atcoder-Beginner-Contest-263D%E9%A2%98%E8%A7%A3/" rel="next" title="Atcoder-Beginner-Contest-#263D题解">
+                  Atcoder-Beginner-Contest-#263D题解 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
