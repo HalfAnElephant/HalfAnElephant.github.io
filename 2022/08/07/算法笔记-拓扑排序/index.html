@@ -18,12 +18,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"xn--tkr8ny3k085d.online","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="拓扑排序  概念  对一个有向无环图(Directed Acyclic Graph 简称 DAG)G 进行拓扑排序，是将 G 中所有顶点排成一个线性序列，使得图中任意一对顶点 u 和 v，若边&lt;u,v&gt;∈E(G)，则 u 在线性序列中出现在 v 之前。通常，这样的线性序列称为满足拓扑次序(Topological Order)的序列，简称拓扑序列。   实现  BFS 12345678">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法笔记:拓扑排序">
-<meta property="og:url" content="http://example.com/2022/08/07/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/index.html">
+<meta property="og:url" content="http://半只大象.online/2022/08/07/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/index.html">
 <meta property="og:site_name" content="来学导数吧">
 <meta property="og:description" content="拓扑排序  概念  对一个有向无环图(Directed Acyclic Graph 简称 DAG)G 进行拓扑排序，是将 G 中所有顶点排成一个线性序列，使得图中任意一对顶点 u 和 v，若边&lt;u,v&gt;∈E(G)，则 u 在线性序列中出现在 v 之前。通常，这样的线性序列称为满足拓扑次序(Topological Order)的序列，简称拓扑序列。   实现  BFS 12345678">
 <meta property="og:locale" content="zh_CN">
@@ -35,11 +35,11 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2022/08/07/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/">
+<link rel="canonical" href="http://半只大象.online/2022/08/07/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/08/07/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/","path":"2022/08/07/算法笔记-拓扑排序/","title":"算法笔记:拓扑排序"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://半只大象.online/2022/08/07/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/","path":"2022/08/07/算法笔记-拓扑排序/","title":"算法笔记:拓扑排序"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>算法笔记:拓扑排序 | 来学导数吧</title>
@@ -201,7 +201,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/07/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/">
+    <link itemprop="mainEntityOfPage" href="http://半只大象.online/2022/08/07/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
