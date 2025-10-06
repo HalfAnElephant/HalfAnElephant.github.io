@@ -1,0 +1,3 @@
+---
+image: cover.png
+---
