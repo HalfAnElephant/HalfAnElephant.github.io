@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>DP on 半只大象的博客</title>
-        <link>https://halfanelephant.github.io/tags/dp/</link>
+        <link>http://localhost:1313/tags/dp/</link>
         <description>Recent content in DP on 半只大象的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Mon, 06 Oct 2025 17:08:23 +0800</lastBuildDate><atom:link href="https://halfanelephant.github.io/tags/dp/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 06 Oct 2025 17:08:23 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/dp/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&#39; Capes</title>
-        <link>https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/</link>
+        <link>http://localhost:1313/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/</link>
         <pubDate>Mon, 06 Oct 2025 17:08:23 +0800</pubDate>
         
-        <guid>https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/</guid>
-        <description>&lt;img src="https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/cover.png" alt="Featured image of post Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&#39; Capes" /&gt;&lt;h1 id=&#34;codeforces-round-1056-div-2-c-the-ancient-wizards-capes&#34;&gt;Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&amp;rsquo; Capes
+        <guid>http://localhost:1313/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/</guid>
+        <description>&lt;img src="http://localhost:1313/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/cover.png" alt="Featured image of post Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&#39; Capes" /&gt;&lt;h1 id=&#34;codeforces-round-1056-div-2-c-the-ancient-wizards-capes&#34;&gt;Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&amp;rsquo; Capes
 &lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codeforces.com/contest/2155/problem/C&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;题目链接: Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&amp;rsquo; Capes&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题目简述&#34;&gt;题目简述

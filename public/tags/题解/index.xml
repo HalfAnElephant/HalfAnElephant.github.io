@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>题解 on 半只大象的博客</title>
-        <link>https://halfanelephant.github.io/tags/%E9%A2%98%E8%A7%A3/</link>
+        <link>http://localhost:1313/tags/%E9%A2%98%E8%A7%A3/</link>
         <description>Recent content in 题解 on 半只大象的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Mon, 06 Oct 2025 18:18:00 +0800</lastBuildDate><atom:link href="https://halfanelephant.github.io/tags/%E9%A2%98%E8%A7%A3/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 06 Oct 2025 18:18:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E9%A2%98%E8%A7%A3/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Codeforces Round 1056 (Div. 2) D. Batteries</title>
-        <link>https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-d.-batteries/</link>
+        <link>http://localhost:1313/p/codeforces-round-1056-div.-2-d.-batteries/</link>
         <pubDate>Mon, 06 Oct 2025 18:18:00 +0800</pubDate>
         
-        <guid>https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-d.-batteries/</guid>
-        <description>&lt;img src="https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-d.-batteries/cover.png" alt="Featured image of post Codeforces Round 1056 (Div. 2) D. Batteries" /&gt;&lt;h1 id=&#34;codeforces-round-1056-div-2-d-batteries&#34;&gt;Codeforces Round 1056 (Div. 2) D. Batteries
+        <guid>http://localhost:1313/p/codeforces-round-1056-div.-2-d.-batteries/</guid>
+        <description>&lt;img src="http://localhost:1313/p/codeforces-round-1056-div.-2-d.-batteries/cover.png" alt="Featured image of post Codeforces Round 1056 (Div. 2) D. Batteries" /&gt;&lt;h1 id=&#34;codeforces-round-1056-div-2-d-batteries&#34;&gt;Codeforces Round 1056 (Div. 2) D. Batteries
 &lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codeforces.com/contest/2155/problem/D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;题目链接: Codeforces Round 1056 (Div. 2) D. Batteries&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题目简述&#34;&gt;题目简述
@@ -25,17 +25,19 @@
 &lt;p&gt;每个样例尝试次数 $\leq \lfloor \frac{n^2}{a}\rfloor$&lt;/p&gt;
 &lt;h2 id=&#34;题目思路&#34;&gt;题目思路
 &lt;/h2&gt;&lt;p&gt;关键在于&lt;strong&gt;会动态调整的交互器&lt;/strong&gt;，即若采取较差策略，消耗过多测试机会的话，那么将会动态调整后续安排，将电池安排到策略未包含的地方。&lt;/p&gt;
-&lt;p&gt;因此我们采取&lt;strong&gt;先小块后大块&lt;/strong&gt;的策略，先查询长度为2的块内部所有对，然后以此为3、4……&lt;/p&gt;
+&lt;p&gt;因此我们采取&lt;strong&gt;先小块后大块&lt;/strong&gt;的策略，先查询长度为 2 的块内部所有对，然后依次为 3、4……&lt;/p&gt;
 &lt;h3 id=&#34;赛后&#34;&gt;赛后
-&lt;/h3&gt;</description>
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codeforces.com/contest/2155/submission/342375592&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;补题链接&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&#39; Capes</title>
-        <link>https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/</link>
+        <link>http://localhost:1313/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/</link>
         <pubDate>Mon, 06 Oct 2025 17:08:23 +0800</pubDate>
         
-        <guid>https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/</guid>
-        <description>&lt;img src="https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/cover.png" alt="Featured image of post Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&#39; Capes" /&gt;&lt;h1 id=&#34;codeforces-round-1056-div-2-c-the-ancient-wizards-capes&#34;&gt;Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&amp;rsquo; Capes
+        <guid>http://localhost:1313/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/</guid>
+        <description>&lt;img src="http://localhost:1313/p/codeforces-round-1056-div.-2-c.-the-ancient-wizards-capes/cover.png" alt="Featured image of post Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&#39; Capes" /&gt;&lt;h1 id=&#34;codeforces-round-1056-div-2-c-the-ancient-wizards-capes&#34;&gt;Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&amp;rsquo; Capes
 &lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codeforces.com/contest/2155/problem/C&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;题目链接: Codeforces Round 1056 (Div. 2) C. The Ancient Wizards&amp;rsquo; Capes&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题目简述&#34;&gt;题目简述
@@ -106,11 +108,11 @@ $$&lt;p&gt;由此可知，$d_i$仅由$d_{i-1}$以及$a_i$、$a_{i - 1}$决定。
         </item>
         <item>
         <title>Codeforces Round 1056 (Div. 2) B. Abraham&#39;s Great Escape</title>
-        <link>https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-b.-abrahams-great-escape/</link>
+        <link>http://localhost:1313/p/codeforces-round-1056-div.-2-b.-abrahams-great-escape/</link>
         <pubDate>Mon, 06 Oct 2025 12:53:51 +0800</pubDate>
         
-        <guid>https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-b.-abrahams-great-escape/</guid>
-        <description>&lt;img src="https://halfanelephant.github.io/p/codeforces-round-1056-div.-2-b.-abrahams-great-escape/cover.png" alt="Featured image of post Codeforces Round 1056 (Div. 2) B. Abraham&#39;s Great Escape" /&gt;&lt;h1 id=&#34;codeforces-round-1056-div-2-b-abrahams-great-escape&#34;&gt;Codeforces Round 1056 (Div. 2) B. Abraham&amp;rsquo;s Great Escape
+        <guid>http://localhost:1313/p/codeforces-round-1056-div.-2-b.-abrahams-great-escape/</guid>
+        <description>&lt;img src="http://localhost:1313/p/codeforces-round-1056-div.-2-b.-abrahams-great-escape/cover.png" alt="Featured image of post Codeforces Round 1056 (Div. 2) B. Abraham&#39;s Great Escape" /&gt;&lt;h1 id=&#34;codeforces-round-1056-div-2-b-abrahams-great-escape&#34;&gt;Codeforces Round 1056 (Div. 2) B. Abraham&amp;rsquo;s Great Escape
 &lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codeforces.com/contest/2155/problem/B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;题目链接: Codeforces Round 1056 (Div. 2) B. Abraham&amp;rsquo;s Great Escape&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题目简述&#34;&gt;题目简述
