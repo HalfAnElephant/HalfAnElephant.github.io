@@ -1,1 +1,1 @@
-Isolated synthetic acceptance root.
+Temporary isolated acceptance change. Do not merge.
